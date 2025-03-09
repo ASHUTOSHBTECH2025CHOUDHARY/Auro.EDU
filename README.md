@@ -56,13 +56,6 @@ Open your browser and go to [http://localhost:3000/](http://localhost:5173/) to 
 - `react-query`
 - `lodash`
 
-## Contributing
-
-Feel free to fork this repository and submit pull requests for improvements or bug fixes.
-
-## License
-
-This project is open-source and available under the MIT License.
 
 ## Author
 
