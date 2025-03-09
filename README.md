@@ -39,11 +39,8 @@ Start the development server:
 npm start
 ```
 
-Open your browser and go to [http://localhost:3000/](http://localhost:3000/) to view the app.
+Open your browser and go to [http://localhost:3000/](http://localhost:5173/) to view the app.
 
-## API Endpoint
-
-This project uses a free online API (e.g., [https://jsonplaceholder.typicode.com/posts](https://jsonplaceholder.typicode.com/posts)) to fetch data dynamically.
 
 ## How It Works
 
