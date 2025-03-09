@@ -1,12 +1,72 @@
-# React + Vite
+# Virtualized Feed React App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a React application that implements a virtualized feed using the TanStack library. It leverages a free online API to fetch data dynamically with lazy loading and implements debouncing for optimized performance.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Virtualized Feed**: Efficiently renders a large list of items using TanStack Virtual
+- **Lazy Loading**: Fetches data only when needed, reducing unnecessary API calls
+- **Debouncing**: Implements a delay mechanism to prevent excessive API requests during user interactions
+- **Free API Integration**: Uses a publicly available API to retrieve data in real-time
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- TanStack Virtual
+- Axios (for API requests)
+- React Query (for caching and asynchronous data fetching)
+- Lodash (for debouncing functionality)
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/virtualized-feed-react.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd virtualized-feed-react
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+## Usage
+
+Start the development server:
+```bash
+npm start
+```
+
+Open your browser and go to [http://localhost:3000/](http://localhost:3000/) to view the app.
+
+## API Endpoint
+
+This project uses a free online API (e.g., [https://jsonplaceholder.typicode.com/posts](https://jsonplaceholder.typicode.com/posts)) to fetch data dynamically.
+
+## How It Works
+
+- **Virtualization**: Uses `tanstack/react-virtual` to render only the visible items in the feed, improving performance.
+- **Lazy Loading**: Loads more data as the user scrolls down, reducing the initial load time.
+- **Debouncing**: Implements `lodash.debounce` to delay API requests and prevent excessive calls when scrolling or filtering.
+
+## Dependencies
+
+- `react`
+- `tanstack/react-virtual`
+- `axios`
+- `react-query`
+- `lodash`
+
+## Contributing
+
+Feel free to fork this repository and submit pull requests for improvements or bug fixes.
+
+## License
+
+This project is open-source and available under the MIT License.
+
+## Author
+
+Your Name - [Ashutosh Choudhary](https://github.com/ASHUTOSHBTECH2025CHOUDHARY)
