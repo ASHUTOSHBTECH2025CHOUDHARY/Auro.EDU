@@ -1,0 +1,258 @@
+/* General Container Styling */
+body{
+  background-color: white;
+}
+.feed-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  overflow-y: auto;
+}
+
+/* Feed Item Styling */
+.feed-item {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 10px;
+  margin-bottom: 30px; /* Added more spacing between feed items */
+  background: blue;
+  color: #333;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Media Content (Image / Video) */
+.feed-media {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* More spacing between images */
+  align-items: center;
+  justify-content: center; /* Center images horizontally */
+}
+
+/* Media Items */
+.feed-media img,
+.feed-media video {
+  object-fit: cover;
+  border-radius: 8px;
+  background: #eee;
+  /* height: 120px; */
+  width: 120px;
+  margin-bottom: 10px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.feed-media img:hover,
+.feed-media video:hover {
+  transform: scale(1.05);
+}
+
+/* Media Description */
+.feed-description {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #555;
+  text-align: center;
+  padding-top: 5px;
+  font-weight: bold;
+}
+
+/* Hover Effect */
+.feed-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Profile Section */
+.feed-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.feed-profile {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ff7eb3, #ff758c);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: #fff;
+  font-size: 16px;
+}
+
+/* Username & Timestamp */
+.feed-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.feed-username {
+  font-weight: bold;
+  font-size: 16px;
+  color: #333;
+}
+
+.feed-time {
+  font-size: 12px;
+  color: #777;
+}
+
+/* Interaction Buttons */
+.feed-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.feed-actions button {
+  border: none;
+  background: none;
+  color: #777;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: color 0.3s ease;
+}
+
+.feed-actions button:hover {
+  color: #ff758c;
+}
+
+.feed-actions button i {
+  font-size: 16px;
+}
+
+/* Search Bar Styling */
+.search-bar {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.search-bar input {
+  width: 100%;
+  max-width: 500px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  outline: none;
+  font-size: 16px;
+  transition: 0.3s ease-in-out;
+}
+
+.search-bar input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+/* Loading Indicator */
+.loading {
+  text-align: center;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #666;
+}
+/* Post Detail Container */
+.post-detail {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  text-align: center;
+}
+
+/* Back Button */
+.post-detail button {
+  align-self: flex-start;
+  padding: 10px 15px;
+  border: none;
+  background: #ff758c;
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.post-detail button:hover {
+  background: #e05270;
+}
+
+/* Media Styling */
+.post-detail img,
+.post-detail video {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Text Content */
+.post-detail p {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Title Styling */
+.post-detail h2 {
+  font-size: 24px;
+  color: #222;
+  margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .post-detail {
+    padding: 15px;
+  }
+
+  .post-detail h2 {
+    font-size: 20px;
+  }
+
+  .post-detail p {
+    font-size: 16px;
+  }
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .feed-container {
+    padding: 15px;
+  }
+
+  .feed-item {
+    padding: 15px;
+  }
+
+  .feed-media {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feed-media img,
+  .feed-media video {
+    width: 100%;
+    height: auto;
+  }
+}
